@@ -1,9 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
 }
+
+.section-container {
+  padding: 30px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+h2.section-heading {
+  margin-bottom: 40px;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+}
+h3.card-heading {
+  position: absolute;
+  bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 4px rgb(51, 51, 51, 0.8);
+}
+
+/*********** HERO SECTION ***********/
 .hero {
   height: 100vh;
   width: 100%;
@@ -18,7 +44,7 @@
   width: 98%;
   height: 100%;
 } */
-img {
+.hero-img {
   width: 100%;
   height: 100vh;
 }
@@ -28,11 +54,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)); */
 }
 
 .hero h1 {
-  font-family: 'Poppins', sans-serif;
   font-size: 54px;
   font-weight: 500;
   color: #fff;
@@ -42,13 +68,95 @@ img {
   transform: translate(-50%, -50%);
   line-height: 1.1;
 }
+
 .hero p {
   position: absolute;
   text-shadow: 3px 3px 4px rgb(51, 51, 51, 0.8);
   font-size: 120px;
+  font-weight: 500;
+  color: inherit;
+}
+.navbar {
+  display: flex;
+  min-width: 520px;
+  justify-content: space-between;
+  padding: 10px 0px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(138, 138, 138, 0.4);
+  border-radius: 40px;
+  list-style: none;
+  font-size: 18px;
   font-weight: 600;
 }
 
-.main {
-  font-size: 50px;
+.nav-item a:link,
+.nav-item a:visited {
+  text-decoration: none;
+  border-radius: 40px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 100ms ease-in;
+}
+.nav-item a:hover,
+.nav-item a:active {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+/*********** WHAT TO DO SECTION ***********/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  column-gap: 40px;
+  position: relative;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+img {
+  width: 100%;
+  transition: all 200ms ease-in;
+}
+.nature img {
+  position: relative;
+  left: 0;
+  top: -120px;
+}
+.culture img {
+  position: relative;
+  left: 0;
+  top: -160px;
+}
+.food img {
+  position: relative;
+  left: 0;
+  top: -100px;
+}
+
+img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+/*********** WHY VISIT NORWAY SECTION ***********/
+h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.why p {
+  font-size: 22px;
+  line-height: 1.8;
 }

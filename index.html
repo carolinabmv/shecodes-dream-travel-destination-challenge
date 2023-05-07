@@ -10,32 +10,58 @@
   <script src="script.js"></script>
   <body>
     <section class="hero">
-      <div class="outline"></div>
       <div class="overlay"></div>
       <img
         src="https://images.unsplash.com/photo-1524434870396-0d752e20692f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-        alt="Norway" />
+        alt="Norway"
+        class="hero-img" />
       <h1>
         Discover
         <p class="city">Norway</p>
       </h1>
-      <nav class="navbar">
-        <ul>
-          <li class="nav-item">Section 1</li>
-          <li class="nav-item">Section 2</li>
-          <li class="nav-item">Section 3</li>
-          <li class="nav-item">Section 4</li>
+      <nav>
+        <ul class="navbar">
+          <li class="nav-item"><a href="#why">Section</a></li>
+          <li class="nav-item"><a href="#">Section</a></li>
+          <li class="nav-item"><a href="#">Section</a></li>
+          <li class="nav-item"><a href="#">Section</a></li>
         </ul>
       </nav>
     </section>
-    <section class="main">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, molestiae fugiat! Magnam earum repudiandae quas
-      tenetur, quia sapiente iure debitis vel corporis cum obcaecati labore delectus deleniti dolor porro aliquam?Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Id debitis suscipit maiores et recusandae autem itaque
-      accusantium quo voluptatem rem? Qui dolor eaque maxime sunt rem a ratione quisquam
-      <voluptate class="lore"></voluptate>
-    </section>
-    <section></section>
-    <section></section>
+    <main>
+      <section id="why" class="why section-container">
+        <h4>Why Norway</h4>
+        <p>
+          Norwegian culture is a fascinating blend of ancient traditions and modern influences. In addition to its
+          stunning landscapes, visitors can experience traditional Norwegian food, culture, and art. Whether you're
+          exploring the cities or the countryside, you'll find that Norway is a unique and unforgettable destination.
+        </p>
+      </section>
+      <section class="what-to-do section-container">
+        <h2 class="section-heading">What to do in Norway?</h2>
+        <div class="grid">
+          <div class="card nature">
+            <img
+              src="https://images.unsplash.com/photo-1604866733284-94725886ebc4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2188&q=80"
+              alt="" />
+            <h3 class="card-heading">Nature</h3>
+          </div>
+          <div class="card culture">
+            <img
+              src="https://images.unsplash.com/photo-1661738357258-e3f2a56e59ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
+              alt="" />
+            <h3 class="card-heading">Culture</h3>
+          </div>
+          <div class="card food">
+            <img
+              src="https://images.unsplash.com/photo-1635008690770-26e82887ec3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2236&q=80"
+              alt="" />
+            <h3 class="card-heading">Food</h3>
+          </div>
+        </div>
+      </section>
+
+      <section></section>
+    </main>
   </body>
 </html>
