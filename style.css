@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,33 +7,47 @@
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
-
+html {
+  font-size: 62.5%;
+}
+.hidden {
+  display: none;
+}
 .section-container {
-  padding: 30px 60px;
-  max-width: 1400px;
+  padding: 3rem 6rem;
+  max-width: 140rem;
+  min-width: 80rem;
   margin: 0 auto;
 }
 h2.section-heading {
-  margin-bottom: 40px;
-  font-size: 34px;
-  font-weight: 600;
-  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 800;
+  font-weight: 800;
+  margin-bottom: 1.6rem;
 }
-h3.card-heading {
-  position: absolute;
-  bottom: 10px;
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  text-align: center;
-  color: #fff;
-  text-shadow: 3px 3px 4px rgb(51, 51, 51, 0.8);
+h3 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 4.4rem;
+  margin-bottom: 4rem;
+}
+/* h4 {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+} */
+p {
+  font-size: 2.4rem;
+  line-height: 2;
+  margin-bottom: 6rem;
 }
 
 /*********** HERO SECTION ***********/
-.hero {
+.hero-section {
   height: 100vh;
   width: 100%;
+  min-width: 80rem;
   position: relative;
 }
 /* .outline {
@@ -58,47 +73,41 @@ h3.card-heading {
   /* background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)); */
 }
 
-.hero h1 {
-  font-size: 54px;
+.hero-section h1 {
+  font-size: 5.4rem;
   font-weight: 500;
   color: #fff;
   position: absolute;
   top: 25%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+  left: 10%;
   line-height: 1.1;
 }
 
-.hero p {
-  position: absolute;
+.hero-section .city {
   text-shadow: 3px 3px 4px rgb(51, 51, 51, 0.8);
-  font-size: 120px;
+  font-size: 12rem;
   font-weight: 500;
   color: inherit;
 }
 .navbar {
-  display: flex;
-  min-width: 520px;
-  justify-content: space-between;
-  padding: 10px 0px;
   position: absolute;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(138, 138, 138, 0.4);
-  border-radius: 40px;
+  min-width: 52rem;
+  display: flex;
   list-style: none;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .nav-item a:link,
 .nav-item a:visited {
   text-decoration: none;
-  border-radius: 40px;
+  border-radius: 4rem;
   color: #fff;
-  padding: 10px 20px;
-  transition: all 100ms ease-in;
+  padding: 1rem 3rem;
+  transition: all 200ms ease-in;
 }
 .nav-item a:hover,
 .nav-item a:active {
@@ -106,13 +115,21 @@ h3.card-heading {
   color: #333;
 }
 
-/*********** WHAT TO DO SECTION ***********/
+/*********** WHY VISIT NORWAY SECTION ***********/
+.why-section {
+  height: 100vh;
+}
 
+.why-norway p {
+  font-size: 2.4rem;
+  line-height: 2;
+  margin-bottom: 6rem;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(300px, 32vw);
   justify-content: space-between;
-  justify-items: center;
   column-gap: 40px;
   position: relative;
 }
@@ -120,43 +137,114 @@ h3.card-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60%;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
 }
-img {
+
+h4.card-heading {
+  position: absolute;
+  bottom: 1.8rem;
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #fff;
+  text-shadow: 3px 3px 4px rgb(51, 51, 51, 0.8);
+}
+.card img {
   width: 100%;
-  transition: all 200ms ease-in;
-}
-.nature img {
-  position: relative;
-  left: 0;
-  top: -120px;
-}
-.culture img {
-  position: relative;
-  left: 0;
-  top: -160px;
-}
-.food img {
-  position: relative;
-  left: 0;
-  top: -100px;
+  height: 100%;
+  /* object-fit: cover; */
+  transition: all 300ms ease-in;
 }
 
-img:hover {
-  transform: scale(1.03);
+.card img:hover {
+  transform: scale(1.02);
   cursor: pointer;
 }
-/*********** WHY VISIT NORWAY SECTION ***********/
-h4 {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 16px;
+
+/***********IDK SECTION***********/
+.testimonials {
+  height: 100vh;
+  background-color: #222;
+  display: flex;
+  align-items: center;
 }
-.why p {
-  font-size: 22px;
-  line-height: 1.8;
+.testimonials p {
+  color: #fff;
+  font-size: 3rem;
+}
+.testimonial1 {
+  color: #fff;
+  text-align: right;
+  line-height: 0.8;
+}
+
+/***********WHAT TO DO SECTION***********/
+.what-to-do-section .section-container {
+  padding: 0 6rem;
+}
+
+.what-to-do-section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 100vh);
+  align-items: center;
+}
+
+.img {
+  justify-self: center;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: cen;
+  align-items: center;
+  position: relative;
+  background-color: beige;
+}
+.btn {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+}
+i {
+  color: #333;
+  cursor: pointer;
+}
+.left {
+  left: 1rem;
+}
+.right {
+  right: 1rem;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+.culture {
+  justify-content: flex-end;
+}
+
+/***********NIGHTLIFE***********/
+.nightlife {
+  height: 100vh;
+  background-color: #222;
+  font-size: 4rem;
+  color: #fff;
+}
+.nightlife h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/***********footer***********/
+.footer {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
 }
