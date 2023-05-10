@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
     <title>Dream Destination - Norway</title>
   </head>
-  <script src="script.js"></script>
   <body>
     <section class="hero-section">
       <div class="overlay"></div>
@@ -16,7 +15,7 @@
         src="https://images.unsplash.com/photo-1524434870396-0d752e20692f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
         alt="Norway"
         class="hero-img" />
-      <h1>
+      <h1 class="img-carousel-fade-in">
         Explore
         <div class="city">Norway</div>
       </h1>
@@ -86,42 +85,43 @@
 
       <section class="what-to-do-section" id="what-to-do">
         <div class="section-container">
-          <div class="what-to-do-section-grid">
-            <div class="img">
-              <button class="btn btn-right btn-nature"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
-              <button class="btn btn-left btn-nature"><i class="fa-solid fa-chevron-left fa-xl"></i></button>
-              <img
-                src="https://images.unsplash.com/photo-1518510434791-8ecb34c419da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
-                alt=""
-                class="hidden" />
-              <img
-                src="https://images.unsplash.com/photo-1559793706-41a63b644d26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
-                alt=""
-                class="hidden" />
-              <img
-                src="https://images.unsplash.com/photo-1658732049826-26f6781c1049?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
-                alt="" />
-              <img
-                src="https://img.itinari.com/pages/images/original/432394f4-5226-4810-aa9b-30de80f739d5-somewhere_over_the-sea-_-_kjeragbolten_-_norway.jpg?ch=DPR&dpr=2.625&w=1600&s=0b2bccb4cc8d8d5dd80a15aa192c6147"
-                alt=""
-                class="hidden" />
+          <div class="attractions nature">
+            <div class="img-container">
+              <div class="buttons">
+                <button class="btn btn-nature"></button>
+                <button class="btn btn-nature"></button>
+                <button class="btn btn-nature"></button>
+                <button class="btn btn-nature"></button>
+              </div>
+              <div class="img-carousel">
+                <img
+                  src="https://images.unsplash.com/photo-1518510434791-8ecb34c419da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
+                  alt=""
+                  class="nature" />
+                <img
+                  src="https://images.unsplash.com/photo-1559793706-41a63b644d26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
+                  alt=""
+                  class="nature hidden" />
+                <img
+                  src="https://images.unsplash.com/photo-1658732049826-26f6781c1049?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
+                  alt=""
+                  class="nature hidden" />
+                <img
+                  src="https://img.itinari.com/pages/images/original/432394f4-5226-4810-aa9b-30de80f739d5-somewhere_over_the-sea-_-_kjeragbolten_-_norway.jpg?ch=DPR&dpr=2.625&w=1600&s=0b2bccb4cc8d8d5dd80a15aa192c6147"
+                  alt=""
+                  class="nature hidden" />
+              </div>
             </div>
-
             <div class="text">
               <h3>Stunning landscapes</h3>
               <p>
                 Norway's natural landscapes are truly stunning, offering a unique and unforgettable experience for
                 visitors. Amongst the country's most iconic destinations are Geiranger Fjord,Trolltunga, Prekeistolen
                 and Kjeragbolten.
-
-                <!-- steep cliffs and cascading waterfalls. Another must-see attraction is Trolltunga, a rock formation
-                   that juts out from a mountain, offering panoramic views of the surrounding scenery. Preikestolen, or
-                  Pulpit Rock, is another popular destination, with a sheer cliff face that towers over Lysefjorden.
-                  Finally, there is , a large boulder wedged between two cliffs that has become a popular
-                  spot for daring hikers to take photos. -->
               </p>
             </div>
-
+          </div>
+          <div class="attractions culture">
             <div class="text">
               <h3>Rich culture</h3>
               <p>
@@ -130,20 +130,46 @@
                 libero necessitatibus amet nulla! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
             </div>
-            <div class="img">
-              <button class="btn btn-right culture"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
-              <button class="btn btn-left culture"><i class="fa-solid fa-chevron-left fa-xl"></i></button>
-              <img
-                src="https://images.unsplash.com/photo-1635008690770-26e82887ec3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2236&q=80"
-                alt="" />
+            <div class="img-container">
+              <div class="buttons">
+                <button class="btn btn-culture"></button>
+                <button class="btn btn-culture"></button>
+                <button class="btn btn-culture"></button>
+              </div>
+              <div class="img-carousel">
+                <img
+                  src="https://images.unsplash.com/photo-1652911610062-6c17e4d5fb8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2235&q=80"
+                  alt=""
+                  class="culture" />
+                <img
+                  src="https://tellusdmsmedia.newmindmedia.com/wsimgs/6190a928-2634-463f-8e98-64ac3cf88765_269690895.jpeg[ProductImage][4C1A7C0DBADE2AD44388EA674B1BAB]"
+                  alt=""
+                  class="culture hidden" />
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5214dd94e4b0153800ca7ab1/1570182066040-5KXLD13735XC09FG0EMC/Norsk-folkemuseum-03.jpg?format=1000w"
+                  alt=""
+                  class="culture hidden" />
+              </div>
             </div>
-
-            <div class="img">
-              <button class="btn btn-right"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
-              <button class="btn btn-left"><i class="fa-solid fa-chevron-left fa-xl"></i></button>
-              <img
-                src="https://images.unsplash.com/photo-1635008690770-26e82887ec3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2236&q=80"
-                alt="" />
+          </div>
+          <div class="attractions food">
+            <div class="img-container">
+              <div class="buttons">
+                <button class="btn btn-right btn-food"></button>
+                <button class="btn btn-left btn-food"></button>
+                <button class="btn btn-left btn-food"></button>
+              </div>
+              <div class="img-carousel">
+                <img src="https://thenorwayguide.com/wp-content/uploads/2022/05/Under-cc1.jpg" alt="" class="food" />
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/5eeb1ab44137f77eaf5b2c55/1594637118472-XUQUZQCIEF4VWSCEIK08/11image-asset.jpeg"
+                  alt=""
+                  class="food hidden" />
+                <img
+                  src="https://mathallenoslo.no/wp-content/uploads/2020/09/Mathallen-by-night.-Foto-Fredrikke-Wiheden-1024x683.jpg"
+                  alt=""
+                  class="food hidden" />
+              </div>
             </div>
             <div class="text">
               <h3>Delicous cusine</h3>
@@ -168,6 +194,7 @@
         dolorum porro ullam itaque dolor. Aspernatur voluptas nobis odio ipsa minus nemo numquam harum enim unde.
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
